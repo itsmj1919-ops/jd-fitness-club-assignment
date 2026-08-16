@@ -1,36 +1,18 @@
 /**
- * Design philosophy: Brutalist Field Console — high-contrast neo-brutalist research tooling
- * with sharp geometry, visible system context, and deliberate accessibility-first interaction.
+ * Monumental Athletics: a concise multi-page architecture for a premium gym’s complete member journey.
  */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import Programs from "./pages/Programs";
+import Coaches from "./pages/Coaches";
+import Membership from "./pages/Membership";
+import Journal from "./pages/Journal";
+import Visit from "./pages/Visit";
+import NotFound from "./pages/NotFound";
 
-function Router() {
-  return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/404" component={NotFound} />
-      <Route component={NotFound} />
-    </Switch>
-  );
-}
-
-function App() {
-  return (
-    <ErrorBoundary>
-      <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
-          <Toaster position="bottom-right" richColors />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
-    </ErrorBoundary>
-  );
-}
-
-export default App;
+function Router() { return <Switch><Route path="/" component={Home} /><Route path="/programs" component={Programs} /><Route path="/coaches" component={Coaches} /><Route path="/membership" component={Membership} /><Route path="/journal" component={Journal} /><Route path="/visit" component={Visit} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch>; }
+export default function App() { return <ErrorBoundary><ThemeProvider defaultTheme="light"><TooltipProvider><Toaster position="bottom-right" /><Router /></TooltipProvider></ThemeProvider></ErrorBoundary>; }

@@ -1,0 +1,14 @@
+/**
+ * Monumental Athletics: a direct, welcoming visit-request flow with clear labels and inline feedback.
+ */
+import { useState } from "react";
+import { ArrowUpRight, CheckCircle2, MapPin } from "lucide-react";
+import { SiteFooter, SiteHeader } from "@/components/SiteChrome";
+
+export default function Visit() {
+  const [form, setForm] = useState({ name: "", email: "", focus: "Strength" });
+  const [errors, setErrors] = useState({ name: "", email: "" });
+  const [sent, setSent] = useState(false);
+  const submit = (event: React.FormEvent) => { event.preventDefault(); const next = { name: form.name.trim().length > 1 ? "" : "Please share the name you would like us to use.", email: /^\S+@\S+\.\S+$/.test(form.email) ? "" : "Please enter a valid email address." }; setErrors(next); if (!next.name && !next.email) setSent(true); };
+  return <div className="site-shell page-light"><SiteHeader /><main><section className="visit-layout"><div className="visit-copy"><p className="eyebrow">Plan a visit</p><h1>Come in.<br />We’ll show you<br />where to begin.</h1><p>The first hour is simple: see the room, talk with a coach, and decide whether the practice feels like yours.</p><div className="visit-address"><MapPin size={18} /><span>12 Viaduct House<br />New York, NY 10013</span></div></div><div className="visit-form-wrap">{sent ? <div className="visit-success"><CheckCircle2 size={34} /><p className="eyebrow">Request received</p><h2>We’ll be in touch soon.</h2><p>This working demo keeps your request in the browser only. Connect a booking service when you are ready to receive live visits.</p><button onClick={() => setSent(false)}>Edit request</button></div> : <form onSubmit={submit} noValidate><p className="eyebrow">A brief introduction</p><label htmlFor="name">Your name</label><input id="name" value={form.name} onChange={(event) => setForm({ ...form, name: event.target.value })} placeholder="Jordan Lee" aria-invalid={!!errors.name} />{errors.name && <small className="field-error">{errors.name}</small>}<label htmlFor="email">Email address</label><input id="email" type="email" value={form.email} onChange={(event) => setForm({ ...form, email: event.target.value })} placeholder="jordan@example.com" aria-invalid={!!errors.email} />{errors.email && <small className="field-error">{errors.email}</small>}<label htmlFor="focus">What brings you in?</label><select id="focus" value={form.focus} onChange={(event) => setForm({ ...form, focus: event.target.value })}><option>Strength</option><option>Conditioning</option><option>Mobility & recovery</option><option>A complete practice</option></select><button type="submit">Request a visit <ArrowUpRight size={17} /></button><p className="form-note">Demo only. No contact information is sent from this website.</p></form>}</div></section></main><SiteFooter /></div>;
+}

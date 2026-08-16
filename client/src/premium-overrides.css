@@ -1,0 +1,31 @@
+/* Monumental Athletics refinement: identity operates as architectural wayfinding, not decorative UI. */
+.atlas-wordmark { column-gap: 8px; font-family: var(--serif); font-size: 11px; font-weight: 600; letter-spacing: .26em; line-height: .72; }
+.atlas-wordmark span { letter-spacing: .34em; }
+.atlas-wordmark b { font-family: var(--serif); font-size: 14px; font-weight: 600; letter-spacing: .3em; }
+.atlas-wordmark i { width: 16px; height: 16px; border-radius: 0; transform: rotate(45deg); }
+.atlas-wordmark i::after { width: 3px; height: 3px; margin: 5px; transform: rotate(-45deg); }
+.desktop-nav a { position: relative; padding-block: 6px; }
+.desktop-nav .nav-active::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 1px; background: var(--cobalt); }
+.world-canvas { opacity: 0; }
+.world-content h1 em { color: #ffffff; font-style: italic; }
+.hero-cta, .dark-button { box-shadow: inset 0 -1px 0 rgba(0,0,0,.15); }
+.programs-architectural { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 520px; margin: 0 5vw 92px; background: var(--ink); color: white; }
+.programs-architectural img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.66) brightness(.85); }
+.programs-architectural > div { display: flex; flex-direction: column; justify-content: center; padding: 10% 14%; }
+.programs-architectural h2 { max-width: 430px; margin: 0; font-family: var(--serif); font-size: clamp(42px, 4vw, 64px); font-weight: 500; line-height: .9; letter-spacing: -.06em; }
+.programs-architectural p:last-child { max-width: 370px; margin: 24px 0 0; color: rgba(255,255,255,.65); font-size: 14px; line-height: 1.75; }
+.material-caption { color: rgba(255,255,255,.57) !important; font-family: var(--sans); font-size: 10px !important; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.membership-folio { margin: 0 9vw; border-top: 1px solid var(--ink); }
+.membership-folio article { display: grid; grid-template-columns: 90px 1fr 300px; gap: 25px; align-items: start; padding: 42px 0; border-bottom: 1px solid var(--line); }
+.membership-folio article.featured { border-left: 3px solid var(--cobalt); padding-left: 18px; }
+.membership-folio .folio-index { color: var(--cobalt); font-size: 11px; font-weight: 700; letter-spacing: .14em; }
+.membership-folio h2 { margin: 0; font-family: var(--serif); font-size: 50px; font-weight: 500; letter-spacing: -.06em; }
+.membership-folio .folio-note { max-width: 390px; margin: 8px 0 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.membership-folio .folio-terms { display: grid; gap: 16px; }
+.membership-folio strong { font-family: var(--serif); font-size: 58px; font-weight: 500; letter-spacing: -.06em; line-height: .82; }
+.membership-folio strong span { padding-left: 5px; font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0; }
+.membership-folio ul { display: grid; gap: 9px; padding: 17px 0; margin: 0; border-top: 1px solid var(--line); list-style: none; font-size: 12px; }
+.membership-folio li { display: flex; gap: 8px; align-items: center; }.membership-folio li svg { color: var(--cobalt); }
+.membership-folio a { display: inline-flex; align-items: center; gap: 8px; margin-top: 3px; font-size: 12px; font-weight: 700; }
+.membership-folio small { margin-bottom: 6px; color: var(--cobalt); font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+@media (max-width: 900px) { .programs-architectural { grid-template-columns: 1fr; margin: 0 25px 65px; }.programs-architectural img { min-height: 340px; }.programs-architectural > div { padding: 70px 25px; }.membership-folio { margin: 0 25px; }.membership-folio article { grid-template-columns: 40px 1fr; gap: 14px; }.membership-folio .folio-terms { grid-column: 2; }.membership-folio article.featured { padding-left: 11px; } }

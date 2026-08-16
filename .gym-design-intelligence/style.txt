@@ -1,0 +1,73 @@
+## UI Pro Max Search Results
+**Domain:** style | **Query:** three dimensional gym performance
+**Source:** styles.csv | **Found:** 3 results
+
+### Result 1
+- **Style ID:** dimensional-layering
+- **Style Category:** Dimensional Layering
+- **Aliases:** 
+- **Status:** active
+- **Parent Style ID:** 
+- **Preferred Mode:** auto
+- **Type:** General
+- **Keywords:** Depth, overlapping, z-index, layers, 3D, shadows, elevation, floating, cards, spatial hierarchy
+- **Primary Colors:** Neutral base (#FFFFFF, #F5F5F5, #E0E0E0) + brand accent for elevated elements
+- **Effects & Animation:** z-index stacking, box-shadow elevation (4 levels), transform: translateZ(), backdrop-filter, parallax
+- **Best For:** Dashboards, card layouts, modals, navigation, product showcases, SaaS interfaces
+- **Light Mode ✓:** supported
+- **Dark Mode ✓:** supported
+- **Performance:** cost:low|drivers:none
+- **Accessibility:** risk:high|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion
+- **Framework Compatibility:** tailwind|mui|chakra
+- **Complexity:** Medium
+- **AI Prompt Keywords:** Design with dimensional layering. Use: z-index depth (multiple layers), overlapping cards, elevation shadows (4 levels), floating elements, parallax depth, backdrop blur for hierarchy, spatial UI feel.
+- **CSS/Technical Keywords:** z-index: 1-4 levels, box-shadow: elevation scale (sm/md/lg/xl), transform: translateZ(), backdrop-filter: blur(), position: relative for stacking, parallax on scroll
+- **Implementation Checklist:** ☐ Layers clearly defined, ☐ Shadows show depth, ☐ Overlaps intentional, ☐ Hierarchy clear, ☐ Performance optimized, ☐ Mobile depth maintained
+- **Design System Variables:** --elevation-1: 0 1px 3px rgba(0,0,0,0.1), --elevation-2: 0 4px 6px rgba(0,0,0,0.1), --elevation-3: 0 10px 20px rgba(0,0,0,0.1), --elevation-4: 0 20px 40px rgba(0,0,0,0.15), --blur-amount: 8px
+
+### Result 2
+- **Style ID:** motion-driven
+- **Style Category:** Motion-Driven
+- **Aliases:** 
+- **Status:** active
+- **Parent Style ID:** 
+- **Preferred Mode:** auto
+- **Type:** General
+- **Keywords:** Animation-heavy, microinteractions, smooth transitions, scroll effects, parallax, entrance anim, page transitions
+- **Primary Colors:** Bold colors emphasize movement, high contrast animated, dynamic gradients, accent action colors
+- **Effects & Animation:** Scroll anim (Intersection Observer), hover (300-400ms), entrance, parallax (3-5 layers), page transitions
+- **Best For:** Portfolio sites, storytelling platforms, interactive experiences, entertainment apps, creative, SaaS
+- **Light Mode ✓:** supported
+- **Dark Mode ✓:** supported
+- **Performance:** cost:low|drivers:none
+- **Accessibility:** risk:conditional|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion
+- **Framework Compatibility:** gsap|framer-motion
+- **Complexity:** High
+- **AI Prompt Keywords:** Build an animation-heavy interface with scroll-triggered animations, microinteractions, parallax scrolling (3-5 layers), smooth transitions (300-400ms), entrance animations, page transitions. Use Intersection Observer for scroll effects, transform for performance, GPU acceleration.
+- **CSS/Technical Keywords:** animation: @keyframes scroll-reveal, transform: translateY/X, Intersection Observer API, will-change: transform, scroll-behavior: smooth, animation-duration: 300-400ms
+- **Implementation Checklist:** ☐ Scroll animations active, ☐ Parallax 3-5 layers, ☐ Entrance animations smooth, ☐ Page transitions fluid, ☐ GPU accelerated, ☐ Prefers-reduced-motion respected
+- **Design System Variables:** --animation-duration: 300-400ms, --parallax-layers: 5, --scroll-behavior: smooth, --gpu-accelerated: true, --entrance-animation: true, --page-transition: smooth
+
+### Result 3
+- **Style ID:** 3d-and-hyperrealism
+- **Style Category:** 3D & Hyperrealism
+- **Aliases:** 
+- **Status:** active
+- **Parent Style ID:** 
+- **Preferred Mode:** auto
+- **Type:** General
+- **Keywords:** Depth, realistic textures, 3D models, spatial navigation, tactile, skeuomorphic elements, rich detail, immersive
+- **Primary Colors:** Deep Navy #001F3F, Forest Green #228B22, Burgundy #800020, Gold #FFD700, Silver #C0C0C0
+- **Effects & Animation:** WebGL/Three.js 3D, realistic shadows (layers), physics lighting, parallax (3-5 layers), smooth 3D (300-400ms)
+- **Best For:** Gaming, product showcase, immersive experiences, high-end e-commerce, architectural viz, VR/AR
+- **Light Mode ✓:** conditional
+- **Dark Mode ✓:** conditional
+- **Performance:** cost:high|drivers:animation,large-images
+- **Accessibility:** risk:high|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion
+- **Framework Compatibility:** threejs|react-three-fiber|custom
+- **Complexity:** High
+- **AI Prompt Keywords:** Build an immersive 3D interface using realistic textures, 3D models (Three.js/Babylon.js), complex shadows, realistic lighting, parallax scrolling (3-5 layers), physics-based motion. Include skeuomorphic elements with tactile detail.
+- **CSS/Technical Keywords:** transform: translate3d, perspective: 1000px, WebGL canvas, Three.js/Babylon.js library, box-shadow: complex multi-layer, background: complex gradients, filter: drop-shadow()
+- **Implementation Checklist:** ☐ WebGL/Three.js integrated, ☐ 3D models loaded, ☐ Parallax 3-5 layers, ☐ Realistic lighting verified, ☐ Complex shadows rendered, ☐ Physics animation smooth 300-400ms
+- **Design System Variables:** --perspective: 1000px, --parallax-layers: 5, --lighting-intensity: realistic, --shadow-depth: 20-40%, --animation-duration: 300-400ms
+

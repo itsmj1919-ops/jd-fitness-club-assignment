@@ -1,71 +1,69 @@
-# UI/UX Pro Max Showcase — Design Direction
+# Performance Atlas — Premium World Redesign
 
 ## Three Possible Directions
 
-### 1. Brutalist Field Console
-**Very Brief Intro:** An asymmetric research console that makes the design intelligence feel tangible, fast, and slightly editorial. Thick rule lines, paper-like cards, sharp labels, and electric signal colors create a tool that feels built for practiced designers rather than generic SaaS buyers.
+### 1. Monumental Athletics
+**Very Brief Intro:** An architectural training house shaped by honed stone, blackened steel, pale daylight, and restrained cobalt details. The feeling is private-club confidence: cinematic, quiet, and obsessively considered.
 
 **Probability:** 0.07
 
-### 2. Museum of Interfaces
-**Very Brief Intro:** A warm, gallery-style interface where every recommendation reads as a curated artifact. Generous negative space, typographic captions, and modular exhibit cards turn the skill into a visual archive.
+### 2. Coastal Endurance House
+**Very Brief Intro:** A bright performance club defined by salt-washed concrete, silver water, and crisp marine blue. It makes training feel restorative, spacious, and location-driven.
 
-**Probability:** 0.04
+**Probability:** 0.02
 
-### 3. Spectral Studio
-**Very Brief Intro:** A luminous, polished creative workspace that layers soft glass panels and rich gradients over a deep charcoal field. It emphasizes experimentation, motion, and the generative dimension of the product.
+### 3. Archive of Motion
+**Very Brief Intro:** A highly editorial gym brand presented like a rare sports monograph, with grainy black-and-white coaching portraits and archival annotation. It feels cultural and collectible rather than commercial.
 
 **Probability:** 0.09
 
 ---
 
-## Selected Direction: Brutalist Field Console
+## Selected Direction: Monumental Athletics
 
 ### Design Movement
-Contemporary **neo-brutalist editorial tooling**, tempered with research-lab clarity. The direction follows the UI/UX Pro Max design-system recommendation for bold asymmetry, high contrast, visible structure, and confident typography, while retaining careful accessibility and usable interaction feedback.
+**Quiet luxury hospitality meets contemporary athletic architecture.** The website should feel like entering an exceptional physical space: precise material finishes, photographic depth, disciplined typography, and a calm rhythm that gives the imagery room to breathe. It must avoid techno-fitness tropes, generic gradients, fake dashboard density, and conspicuous “3D for 3D’s sake.”
 
 ### Core Principles
-1. **Show the system at work.** Expose search inputs, result categories, confidence marks, and source labels instead of hiding the logic behind decorative marketing.
-2. **Use contrast as hierarchy.** Dense ink-blue information, warm paper backgrounds, sharp violet primary actions, and cyan signals make every section easy to scan.
-3. **Prefer purposeful asymmetry.** The main canvas is anchored by a narrow utility rail and offset content blocks, avoiding a centered SaaS-template feel.
-4. **Make interactions feel instrumented.** Selected states, input focus, score bars, and filtered cards should visibly respond without gratuitous animation.
+1. **Reality earns the luxury.** Photoreal architectural images, genuine material detail, credible scale, and human training moments establish a world a visitor can imagine entering.
+2. **The first page is a place, not a poster.** A full-screen 3D architectural world provides atmosphere and orientation; the user then moves into complete, calmer content pages.
+3. **Interaction is tactile and almost invisible.** Small shifts in depth, image crop, light, and type respond to input without theatrical UI noise.
+4. **The conversion story is hospitable.** Programs, coaching, membership, and a visit request read like a considered invitation—not a high-pressure funnel.
 
 ### Color Philosophy
-The base is a warm, paper-like violet-white to reduce screen fatigue and make the product feel like a working notebook rather than a dark code editor. **Ultraviolet `#7C3AED`** carries the brand’s generative intelligence, while mineral cyan `#0891B2` acts as a precise “signal found” accent. Ink `#1E1B4B` provides serious reading contrast; orange and green appear sparingly as status semantics, never as competing brand colors.
+The foundation is **Basalt `#141514`**, **Limestone `#E8E4DC`**, and **Mist `#F7F5F0`**. **Atlas Cobalt `#315BFF`** remains the singular brand signal—used as a small coordinate light, active nav marker, and primary action. A deeply oxidized **Copper `#9A5A3A`** appears sparingly in physical details, not as a general interface accent. This restrained palette preserves contrast and lets realistic gym imagery carry emotional weight.
 
 ### Layout Paradigm
-Use a **persistent left field rail** for navigation and system context, paired with a broad, vertically segmented laboratory canvas. On large screens, the hero is intentionally split into an oversized editorial statement and an adjacent live “design signal” panel. Recommendation cards form masonry-like clusters with intentional different spans rather than uniform rows. On small screens, collapse the rail into a compact top strip while keeping the visual label hierarchy.
+The experience starts with a **world landing page**: a cinematic, full-viewport 3D training hall with an anchored wordmark, architectural information markers, and a single invitation to enter. The remaining experience uses distinct routes rather than an endlessly long landing page: `/programs`, `/coaches`, `/membership`, `/journal`, and `/visit`. Each page alternates between full-bleed editorial imagery, narrow reading columns, and expansive quiet space.
 
 ### Signature Elements
-1. **Registration marks:** Small coordinate dots, field labels, and numbered rule lines appear at section edges to make the interface feel like an active instrument panel.
-2. **Signal tags:** High-contrast rectangular labels such as `STYLE`, `A11Y`, `STACK`, and `MCP` identify where every recommendation comes from.
-3. **Ruler bars:** Repeated thin tick-mark bars and segmented confidence meters turn density and evidence into a visual language.
+1. **The Atlas coordinate light:** a small cobalt point that recurs in the 3D world, navigation, buttons, and location markers.
+2. **Material captions:** small uppercase labels set against limestone rules, identifying training spaces, coaches, and program details.
+3. **Architectural crops:** images intentionally reveal surfaces, equipment, and human posture rather than generic smiling fitness photography.
 
 ### Interaction Philosophy
-Every control should give a decisive response: filters change state clearly, cards explain why they are relevant, and search interactions should update the corresponding recommendation area. Keyboard users must see a strong focus treatment. Any unavailable external operation must state that it is a showcase interaction rather than imply a live integration.
+The 3D landing world supports a clear “enter” action, subtle pointer parallax, and optional orbit exploration; every important route remains available via semantic navigation. Image cards reveal one factual layer on hover or focus, but never gate text behind hover. The visit request offers direct labels, inline validation, and feedback. WebGL is enhanced presentation—not the only path to understanding the brand.
 
 ### Animation
-Use concise 160–240ms transform-and-opacity transitions with `cubic-bezier(0.23, 1, 0.32, 1)`. Results can enter with a 40ms stagger; chips and filter changes should be near-instant. Avoid looping animation and animated layout shifts. Respect `prefers-reduced-motion` by rendering final states without transitional movement.
+Use camera easing and light shifts only to orient. Typical interface motion is 180–260ms with `cubic-bezier(0.23, 1, 0.32, 1)`; cinematic entrance movement is limited to the landing world and can take 800ms. Prefer opacity and transform; use no perpetual decorative loops. All significant motion must settle into a complete static state under `prefers-reduced-motion`.
 
 ### Typography System
-**Space Grotesk** is the display and UI-heading face: bold, technical, and compact at large scale. **DM Sans** handles body copy and controls for legibility. Set display headlines at 700 weight with tight tracking; reserve monospace labels for metadata only. Use a clear type rhythm: 11px overlines, 14–16px interfaces, 20–24px section titles, and 44–68px hero display.
+Use **DM Sans** as the refined utility text family and **Cormorant Garamond** for editorial display moments. The wordmark is a custom high-contrast serif lockup with broad tracking and a small, geometric Atlas coordinate. Headings are elegant but not ornamental; schedules, facts, and forms stay direct and highly legible in DM Sans.
 
 ### Brand Essence
-**UI/UX Pro Max is a design intelligence field console for product teams that need credible visual decisions before they write the interface.**
+**Performance Atlas is a private-feeling urban training house for people who value rigorous coaching, a beautiful environment, and training that supports a whole life.**
 
-**Personality:** incisive, experimental, dependable.
+**Personality:** composed, exacting, generous.
 
 ### Brand Voice
-Write as a confident design partner that names the decision and the evidence behind it. Headlines should be direct and diagnostic; CTAs should invite a specific next action rather than generic onboarding.
+The voice is spare, assured, and hospitable. Headlines should name an outcome or principle without hyperbole; calls to action should make the next step feel easy.
 
-Example lines:
+> “A better room for the work that matters.”
 
-> “Turn a fuzzy product brief into a defensible interface direction.”
-
-> “Scan the evidence. Keep the taste.”
+> “Come in. We’ll show you where to begin.”
 
 ### Wordmark & Logo
-Use a compact **offset grid aperture** as the mark: four violet and cyan blocks interrupted by a white cut line, suggesting both a layout grid and a signal scan. The wordmark uses a tightly tracked Space Grotesk label with the words stacked as `UI/UX` and `PRO MAX`, never a default-text logo treatment.
+The mark is a slender cobalt coordinate star set beside a custom serif wordmark. The wordmark uses high-contrast strokes and an elongated crossbar on the A, recalling both a map reference and an architectural elevation. It should never look like a generic sports badge.
 
 ### Signature Brand Color
-**Signal Ultraviolet — `#7C3AED`**
+**Atlas Cobalt — `#315BFF`**
