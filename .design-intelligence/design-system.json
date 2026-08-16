@@ -1,0 +1,119 @@
+{
+  "design_system": {
+    "project_name": "UI/UX Pro Max Showcase",
+    "category": "AI/Chatbot Platform",
+    "pattern": {
+      "name": "Product Demo + Features",
+      "sections": "Hero > Product video/mockup (center) > Feature breakdown per section > Comparison (optional) > CTA",
+      "cta_placement": "Video center + CTA right/bottom",
+      "color_strategy": "Video surround: Brand color overlay. Features: Icon color #0080FF. Text: Dark #222",
+      "conversion": "Use an interactive demo only when it explains value better than static media. Provide captions, transcript, visible play/pause controls, and a non-video fallback; do not autoplay under reduced motion. Pause media when offscreen or hidden and keep the final product state available as static content."
+    },
+    "style": {
+      "id": "brutalism",
+      "name": "Brutalism",
+      "type": "General",
+      "effects": "No smooth transitions (instant), sharp corners (0px), bold typography (700+), visible grid, large blocks",
+      "keywords": "Raw, unpolished, stark, high contrast, plain text, default fonts, visible borders, asymmetric, anti-design",
+      "best_for": "Design portfolios, artistic projects, counter-culture brands, editorial/media sites, tech blogs",
+      "performance": "cost:low|drivers:none",
+      "accessibility": "risk:low|requires:contrast-text-4.5,keyboard,visible-focus,reduced-motion",
+      "light_mode": "supported",
+      "dark_mode": "supported"
+    },
+    "colors": {
+      "primary": "#7C3AED",
+      "on_primary": "#FFFFFF",
+      "secondary": "#A78BFA",
+      "on_secondary": "#0F172A",
+      "accent": "#0891B2",
+      "on_accent": "#000000",
+      "background": "#FAF5FF",
+      "foreground": "#1E1B4B",
+      "card": "#FFFFFF",
+      "card_foreground": "#1E1B4B",
+      "muted": "#ECEEF9",
+      "muted_foreground": "#475569",
+      "border": "#DDD6FE",
+      "destructive": "#DC2626",
+      "on_destructive": "#FFFFFF",
+      "ring": "#7C3AED",
+      "notes": "AI purple + cyan interactions [Accent adjusted from #06B6D4]",
+      "cta": "#0891B2",
+      "text": "#1E1B4B",
+      "on_cta": "#000000"
+    },
+    "typography": {
+      "heading": "Space Grotesk",
+      "body": "DM Sans",
+      "mood": "tech, startup, modern, innovative, bold, futuristic",
+      "best_for": "Tech companies, startups, SaaS, developer tools, AI products",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap",
+      "css_import": "@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');"
+    },
+    "key_effects": "No smooth transitions (instant), sharp corners (0px), bold typography (700+), visible grid, large blocks",
+    "anti_patterns": "Heavy chrome + Slow response feedback",
+    "decision_rules": {
+      "must_have": [
+        "constraint:conversational-ui",
+        "constraint:context-awareness"
+      ]
+    },
+    "activated_rules": [
+      {
+        "condition": "must_have",
+        "actions": [
+          "constraint:conversational-ui",
+          "constraint:context-awareness"
+        ]
+      }
+    ],
+    "constraints": [
+      "conversational-ui",
+      "context-awareness"
+    ],
+    "reasoning_default": false,
+    "source_identities": {
+      "product": "AI/Chatbot Platform",
+      "reasoning": "AI/Chatbot Platform",
+      "style": "brutalism",
+      "color": "AI/Chatbot Platform",
+      "typography": "Tech Startup",
+      "landing": "Product Demo + Features"
+    },
+    "source_derivations": {
+      "color_mode": null
+    },
+    "severity": "HIGH",
+    "dials": {
+      "variance": 8,
+      "variance_label": "Bold / Asymmetric",
+      "motion": 4,
+      "motion_label": "Standard",
+      "density": 7,
+      "density_label": "Standard"
+    },
+    "motion_snippet": {
+      "Category": "Stagger List",
+      "Intensity Tier": "Standard",
+      "Trigger": "load or scroll",
+      "Duration": "300-450ms",
+      "Easing": "back.out(1.4)",
+      "GSAP Snippet": "gsap.from('.grid-item', { opacity: 0, scale: 0.92, y: 16, duration: 0.4, stagger: { each: 0.06, from: 'start', grid: 'auto' }, ease: 'back.out(1.4)' });",
+      "Framework Notes": "grid: 'auto' lets GSAP infer rows/columns from a CSS grid layout for a natural wave stagger; Use matchMedia('(prefers-reduced-motion: reduce)') to skip non-essential motion and render the final state immediately",
+      "Do": "Combine with from: 'center' for a bento-grid layout to draw the eye inward first",
+      "Don't": "Don't use back.out on dense data tables; the overshoot reads as sloppy on informational UI",
+      "Performance Notes": "Group DOM writes; avoid interleaving layout reads (getBoundingClientRect) between staggered tweens"
+    },
+    "spacing_scale": {
+      "xs": "4px",
+      "sm": "8px",
+      "md": "16px",
+      "lg": "24px",
+      "xl": "32px",
+      "2xl": "48px",
+      "3xl": "64px"
+    }
+  },
+  "persistence": null
+}

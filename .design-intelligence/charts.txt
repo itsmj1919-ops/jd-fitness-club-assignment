@@ -1,0 +1,52 @@
+## UI Pro Max Search Results
+**Domain:** chart | **Query:** dashboard data exploration
+**Source:** charts.csv | **Found:** 3 results
+
+### Result 1
+- **Data Type:** Performance vs Target (Compact)
+- **Keywords:** bullet, compact, kpi, dashboard, target, benchmark, range, accessible chart, keyboard accessible chart
+- **Best Chart Type:** Bullet Chart
+- **Secondary Options:** Gauge, Progress Bar
+- **When to Use:** Dashboard with multiple KPIs side by side; space-constrained contexts where a gauge is too large
+- **When NOT to Use:** Single KPI with emphasis (use gauge); data has no defined target range; fewer than 3 KPIs
+- **Data Volume Threshold:** Ideal for 3–10 bullet charts in a grid; scales to any count efficiently
+- **Color Guidance:** Qualitative ranges: #FFCDD2 / #FFF9C4 / #C8E6C9 (bad/ok/good). Performance bar: #1976D2. Target: black 3px marker
+- **Accessibility Grade:** deprecated: use Accessibility Risk
+- **Accessibility Risk:** risk:low
+- **Accessibility Notes:** Label every qualitative range and target with text; color is supplementary.
+- **A11y Fallback:** Visible KPI/target table plus status summary. Keyboard: focus reveals the same detail as hover.
+- **Library Recommendation:** D3.js, Plotly, Custom SVG
+- **Interactive Level:** Hover
+
+### Result 2
+- **Data Type:** Relationship / Connection Data
+- **Keywords:** network, graph, nodes, edges, connections, relationships, force, accessible chart, keyboard accessible chart
+- **Best Chart Type:** Network Graph
+- **Secondary Options:** Hierarchical Tree, Adjacency Matrix
+- **When to Use:** Mapping connections between entities; network topology or social graph exploration context
+- **When NOT to Use:** Node count > 500 without clustering pre-applied; user needs precise connection counts; mobile context
+- **Data Volume Threshold:** ≤100 nodes: SVG; 101–500: Canvas; >500: must apply clustering/LOD before rendering
+- **Color Guidance:** Node types: categorical colors. Edges: #90A4AE at 60% opacity. Highlight path: #F59E0B
+- **Accessibility Grade:** deprecated: use Accessibility Risk
+- **Accessibility Risk:** risk:high
+- **Accessibility Notes:** Use labeled node types, shapes, and edge styles in addition to color; the adjacency view is the accessible source of truth. Do not rely on color alone.
+- **A11y Fallback:** Adjacency list/table and relationship summary; tree view when applicable. Keyboard: focus reveals node details; Enter drills; Move up/down/left/right buttons replace drag.
+- **Library Recommendation:** D3.js (d3-force), Vis.js, Cytoscape.js
+- **Interactive Level:** Drilldown + Hover + Drag
+
+### Result 3
+- **Data Type:** Performance vs Target
+- **Keywords:** performance, target, kpi, gauge, goal, threshold, progress, accessible chart, keyboard accessible chart
+- **Best Chart Type:** Gauge Chart or Bullet Chart
+- **Secondary Options:** Dial, Thermometer
+- **When to Use:** Single KPI measured against a defined target or threshold; dashboard summary context
+- **When NOT to Use:** No target or benchmark exists; comparing multiple KPIs at once (use bullet chart grid)
+- **Data Volume Threshold:** Single metric per gauge; for 3+ KPIs use bullet chart grid layout
+- **Color Guidance:** Performance: Red → Yellow → Green gradient. Target: marker line. Threshold zones clearly differentiated
+- **Accessibility Grade:** deprecated: use Accessibility Risk
+- **Accessibility Risk:** risk:low
+- **Accessibility Notes:** Place the number and target text beside the gauge and label threshold zones; red/yellow/green alone is insufficient.
+- **A11y Fallback:** Visible KPI/target text and a one-row data table plus status summary. Keyboard: focus reveals the same detail as hover.
+- **Library Recommendation:** D3.js, ApexCharts, Custom SVG
+- **Interactive Level:** Hover
+
