@@ -5,6 +5,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "./premium-overrides.css";
+@import "./immersive.css";
 
 :root { --ink:#141514; --limestone:#e8e4dc; --mist:#f7f5f0; --cobalt:#315bff; --copper:#9a5a3a; --muted:#6f716e; --line:rgba(20,21,20,.19); --sans:"DM Sans",sans-serif; --serif:"Cormorant Garamond",serif; }
 * { box-sizing: border-box; border-color: var(--line); }

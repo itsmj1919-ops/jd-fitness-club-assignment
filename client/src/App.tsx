@@ -13,6 +13,7 @@ import Membership from "./pages/Membership";
 import Journal from "./pages/Journal";
 import Visit from "./pages/Visit";
 import NotFound from "./pages/NotFound";
+import { AtlasWorldRuntime } from "./components/AtlasWorldRuntime";
 
 function Router() { return <Switch><Route path="/" component={Home} /><Route path="/programs" component={Programs} /><Route path="/coaches" component={Coaches} /><Route path="/membership" component={Membership} /><Route path="/journal" component={Journal} /><Route path="/visit" component={Visit} /><Route path="/404" component={NotFound} /><Route component={NotFound} /></Switch>; }
-export default function App() { return <ErrorBoundary><ThemeProvider defaultTheme="light"><TooltipProvider><Toaster position="bottom-right" /><Router /></TooltipProvider></ThemeProvider></ErrorBoundary>; }
+export default function App() { return <ErrorBoundary><ThemeProvider defaultTheme="light"><TooltipProvider><AtlasWorldRuntime><Toaster position="bottom-right" /><Router /></AtlasWorldRuntime></TooltipProvider></ThemeProvider></ErrorBoundary>; }

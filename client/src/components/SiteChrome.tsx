@@ -4,6 +4,8 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
+import { AtlasCommand } from "./AtlasCommand";
+import { useAtlasWorld } from "./AtlasWorldRuntime";
 
 const navItems = [
   { href: "/programs", label: "Programs" },
@@ -13,18 +15,21 @@ const navItems = [
 ];
 
 export function Wordmark({ light = false }: { light?: boolean }) {
-  return <span className={`atlas-wordmark ${light ? "atlas-wordmark-light" : ""}`}><i aria-hidden="true" /><span>PERFORMANCE</span><b>ATLAS</b></span>;
+  return <span className={`atlas-wordmark ${light ? "atlas-wordmark-light" : ""}`}><i aria-hidden="true" /><span>PERFORMANCE</span><b>ATLAS</b><em aria-hidden="true">40°44′N</em></span>;
 }
 
 export function SiteHeader({ overlay = false }: { overlay?: boolean }) {
   const [open, setOpen] = useState(false);
   const [location] = useLocation();
+  const atlasWorld = useAtlasWorld();
   return <header className={`site-header ${overlay ? "site-header-overlay" : ""}`}>
     <div className="site-header-inner">
       <Link href="/" className="brand-link" aria-label="Performance Atlas home"><Wordmark light={overlay} /></Link>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {navItems.map((item) => <Link key={item.href} href={item.href} className={location === item.href ? "nav-active" : ""}>{item.label}</Link>)}
       </nav>
+      <button className={`atlas-map-trigger ${overlay ? "atlas-map-trigger-light" : ""}`} onClick={() => atlasWorld?.setMapOpen(true)}><span>Atlas house</span><i aria-hidden="true">↗</i></button>
+      <AtlasCommand />
       <Link href="/visit" className={`visit-link ${overlay ? "visit-link-light" : ""}`}>Plan a visit <span aria-hidden="true">↗</span></Link>
       <button className={`mobile-menu ${overlay ? "mobile-menu-light" : ""}`} onClick={() => setOpen(!open)} aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open}>{open ? <X size={20} /> : <Menu size={20} />}</button>
     </div>

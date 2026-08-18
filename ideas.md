@@ -67,3 +67,19 @@ The mark is a slender cobalt coordinate star set beside a custom serif wordmark.
 
 ### Signature Brand Color
 **Atlas Cobalt — `#315BFF`**
+
+## Style Decisions
+
+The Atlas House is a **spatial narrative system**, not a decorative canvas. It uses a single shared architecture with route-specific rooms, quality tiers, and full semantic fallbacks. The 3D layer must never cover reading or interaction layers.
+
+Every route uses explicit content bounds, responsive typography clamps, dedicated media safe areas, and a documented z-index hierarchy. Text should never be placed in an uncontrolled image void or depend on decorative effects for contrast.
+
+21st.dev-informed patterns are adapted as interaction architecture only. Their visual treatment must remain consistent with basalt, limestone, restrained cobalt, material captions, and the Performance Atlas typography system.
+
+Motion remains spatial and purposeful: opening/route transitions may be cinematic, while actionable components use short interruptible feedback. Continuous decorative motion is prohibited; all essential content resolves to a stable state under reduced-motion preferences.
+
+The cobalt Atlas coordinate is a directional wayfinding system attached to room labels, material captions, coach introductions, and primary actions; it is never decorative scatter.
+
+Each route keeps the shared Monumental Athletics material system while expressing a distinct room: structured rhythm for Programs, close observation for Coaching, hospitality for Membership, editorial archive for Journal, and calm invitation for Visit.
+
+Atlas Cobalt `#315BFF` is reserved for a single primary action or coordinate signal per section; hierarchy otherwise comes from typography, scale, material, and spatial rules.
