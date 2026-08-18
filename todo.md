@@ -25,4 +25,14 @@
 - [x] Generate and integrate additional route-specific architectural visual assets and complete the editable motion-media project.
 - [x] Verify motion, reduced-motion fallbacks, desktop/mobile structure, accessibility, and build quality.
 - [ ] Render the editable Atlas House Tour only after the user explicitly approves final MP4 output.
-- [ ] Save the final enhanced website checkpoint and deliver it.
+- [x] Save the final enhanced website checkpoint and deliver it.
+
+## Member Sign-In and My Practice
+
+- [x] Upgrade the static project to the full-stack authentication and database foundation while preserving public routes.
+- [x] Add and migrate the protected member preferences, Journal notes, and training-session data model.
+- [x] Build authorization-safe member procedures and test data isolation between members.
+- [x] Add Manus sign-in/sign-out states, public fallback prompts, and protected My Practice navigation.
+- [x] Add persistent Journal note saving and persistent session-plan saving from existing public routes.
+- [x] Build and validate the private My Practice workspace, responsive states, and member privacy.
+- [x] Save and deliver the member-enabled website checkpoint.

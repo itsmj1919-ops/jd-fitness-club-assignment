@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { AtlasCommand } from "./AtlasCommand";
 import { useAtlasWorld } from "./AtlasWorldRuntime";
+import { MemberActions } from "./MemberActions";
 
 const navItems = [
   { href: "/programs", label: "Programs" },
@@ -30,6 +31,7 @@ export function SiteHeader({ overlay = false }: { overlay?: boolean }) {
       </nav>
       <button className={`atlas-map-trigger ${overlay ? "atlas-map-trigger-light" : ""}`} onClick={() => atlasWorld?.setMapOpen(true)}><span>Atlas house</span><i aria-hidden="true">↗</i></button>
       <AtlasCommand />
+      <MemberActions light={overlay} />
       <Link href="/visit" className={`visit-link ${overlay ? "visit-link-light" : ""}`}>Plan a visit <span aria-hidden="true">↗</span></Link>
       <button className={`mobile-menu ${overlay ? "mobile-menu-light" : ""}`} onClick={() => setOpen(!open)} aria-label={open ? "Close navigation" : "Open navigation"} aria-expanded={open}>{open ? <X size={20} /> : <Menu size={20} />}</button>
     </div>
