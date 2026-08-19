@@ -24,7 +24,6 @@
 - [x] Add route-specific visual, exploration, coaching, membership, journal, and visit enhancements without removing current functionality.
 - [x] Generate and integrate additional route-specific architectural visual assets and complete the editable motion-media project.
 - [x] Verify motion, reduced-motion fallbacks, desktop/mobile structure, accessibility, and build quality.
-- [ ] Render the editable Atlas House Tour only after the user explicitly approves final MP4 output.
 - [x] Save the final enhanced website checkpoint and deliver it.
 
 ## Member Sign-In and My Practice
@@ -36,3 +35,13 @@
 - [x] Add persistent Journal note saving and persistent session-plan saving from existing public routes.
 - [x] Build and validate the private My Practice workspace, responsive states, and member privacy.
 - [x] Save and deliver the member-enabled website checkpoint.
+
+## Atlas House Tour Recovery
+
+- [x] Recover the preserved footage and approved Tour composition specifications from available project records.
+- [x] Recreate the exact Atlas House Tour treatment as an editable validated composition.
+- [x] Render and verify the user-approved final MP4.
+- [x] Upload and integrate the restored Tour as an optional motion-safe website layer.
+- [x] Add an accessible Home-page Atlas House Tour layer with explicit play/pause controls and a no-motion fallback.
+- [ ] Save a new checkpoint containing the verified Atlas House Tour integration.
+- [ ] Deliver the final website update and checkpoint to the user.
