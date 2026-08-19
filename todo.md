@@ -45,3 +45,16 @@
 - [x] Add an accessible Home-page Atlas House Tour layer with explicit play/pause controls and a no-motion fallback.
 - [x] Save a new checkpoint containing the verified Atlas House Tour integration.
 - [x] Deliver the final website update and checkpoint to the user.
+
+## Atlas House Tour Accessibility Enhancement
+
+- [x] Generate, trim, verify, and upload the optional ambient sound asset and synchronized WebVTT captions.
+- [x] Add synchronized play, captions, and ambient-sound controls while preserving motion safety.
+- [x] Style responsive, keyboard-accessible controls and readable caption presentation.
+- [x] Test and visually validate caption, sound, playback, and reduced-motion behavior.
+- [x] Manually exercise the live Tour play/pause, captions, and ambient-sound controls and verify synchronization on viewport exit.
+- [x] Verify the reduced-motion still fallback, disabled controls, and explicit opt-in path in a controlled browser session.
+- [x] Capture final desktop/mobile evidence for caption readability and media-control behavior.
+- [x] Ensure the ambient track starts from the visitor’s direct opt-in gesture and re-verify live synchronization.
+- [ ] Save the verified accessible Tour enhancement checkpoint.
+- [ ] Deliver the accessible Tour enhancement checkpoint to the user.
