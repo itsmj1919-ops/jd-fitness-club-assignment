@@ -43,5 +43,5 @@
 - [x] Render and verify the user-approved final MP4.
 - [x] Upload and integrate the restored Tour as an optional motion-safe website layer.
 - [x] Add an accessible Home-page Atlas House Tour layer with explicit play/pause controls and a no-motion fallback.
-- [ ] Save a new checkpoint containing the verified Atlas House Tour integration.
-- [ ] Deliver the final website update and checkpoint to the user.
+- [x] Save a new checkpoint containing the verified Atlas House Tour integration.
+- [x] Deliver the final website update and checkpoint to the user.
