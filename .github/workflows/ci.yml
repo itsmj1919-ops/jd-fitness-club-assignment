@@ -29,6 +29,18 @@ jobs:
       - name: Verify plain assignment app
         run: pnpm verify:assignment
 
+      - name: Start app shell for endpoint tests
+        run: |
+          pnpm dev > /tmp/jd-fitness-dev.log 2>&1 &
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:3000/ >/dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/jd-fitness-dev.log
+          exit 1
+
       - name: Run project tests
         run: pnpm test
 
