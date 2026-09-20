@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141514" />
+    <meta name="description" content="JD Fitness Club Training Desk — a simple HTML, CSS, and JavaScript training task tracker and practice note." />
+    <title>Training Desk | JD Fitness Club</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="site-noise" aria-hidden="true"></div>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="JD Fitness Club Training Desk home">
+          <span class="mark" aria-hidden="true"><i></i></span>
+          <span><strong>JD FITNESS</strong><b>CLUB</b></span>
+        </a>
+        <div class="assignment-tag"><span>SE</span> ASSIGNMENT 01</div>
+      </header>
+
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> Simple practice / local browser storage</p>
+          <h1 id="page-title">Make the next<br /><em>session</em> count.</h1>
+          <p class="hero-description">A focused training desk for capturing what matters, checking it off, and returning with intent.</p>
+        </div>
+        <div class="hero-coordinate" aria-label="JD Fitness Club training desk"><span>40° 44′ N</span><i></i><span>73° 59′ W</span></div>
+      </section>
+
+      <section class="dashboard-grid" aria-label="Training desk">
+        <article class="panel task-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">01 / The list</p><h2>Training tasks</h2></div>
+            <span class="count-pill" id="task-count">0 open</span>
+          </div>
+          <form class="task-form" id="task-form">
+            <label class="sr-only" for="task-input">Add a training task</label>
+            <input id="task-input" name="task" type="text" maxlength="100" placeholder="Add the next thing to practice…" autocomplete="off" required />
+            <button class="primary-button" type="submit">Add task <span aria-hidden="true">↗</span></button>
+          </form>
+          <div class="filter-row" role="group" aria-label="Filter tasks">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="open" aria-pressed="false">Open</button>
+            <button class="filter-button" type="button" data-filter="done" aria-pressed="false">Complete</button>
+          </div>
+          <p class="empty-state" id="empty-state">Your list is clear. Add one useful task to begin.</p>
+          <ul class="task-list" id="task-list" aria-live="polite"></ul>
+        </article>
+
+        <aside class="panel note-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">02 / The note</p><h2>Practice note</h2></div>
+            <span class="save-status" id="save-status" role="status">Local only</span>
+          </div>
+          <form id="note-form">
+            <label for="note-title">Heading</label>
+            <input id="note-title" type="text" maxlength="80" placeholder="What deserves attention?" />
+            <label for="note-body">Reflection</label>
+            <textarea id="note-body" maxlength="600" placeholder="Write a short note about today’s practice…"></textarea>
+            <div class="note-footer"><span id="character-count">0 / 600</span><button class="secondary-button" type="submit">Save note</button></div>
+          </form>
+        </aside>
+      </section>
+
+      <section class="principles" aria-labelledby="principles-title">
+        <div><p class="eyebrow">03 / The method</p><h2 id="principles-title">Small actions.<br />A dependable rhythm.</h2></div>
+        <div class="principle-list">
+          <p><span>01</span><strong>Choose one</strong> Give the next action a clear edge.</p>
+          <p><span>02</span><strong>Return often</strong> Progress is built from repeatable work.</p>
+          <p><span>03</span><strong>Leave a trace</strong> Keep a note so tomorrow starts closer.</p>
+        </div>
+      </section>
+
+      <footer class="footer"><span>JD FITNESS CLUB / TRAINING DESK</span><span>Built with HTML, CSS &amp; JavaScript</span></footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
