@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: a lightweight, accessible match prompt that directs the visitor to an appropriate coaching introduction.
+ * JD Fitness Club: a lightweight, accessible match prompt that directs the visitor to an appropriate coaching introduction.
  */
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: membership is presented as a hospitable invitation with direct, useful detail.
+ * JD Fitness Club: membership is presented as a hospitable invitation with direct, useful detail.
  */
 import { Check, ArrowUpRight, X } from "lucide-react";
 import { useState } from "react";

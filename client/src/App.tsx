@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: a concise multi-page architecture for a premium gym’s complete member journey.
+ * JD Fitness Club: a concise multi-page architecture for a premium gym’s complete member journey.
  */
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";

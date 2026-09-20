@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: an editorial journal that extends the gym’s point of view beyond the floor.
+ * JD Fitness Club: an editorial journal that extends the gym’s point of view beyond the floor.
  */
 import { ArrowUpRight, Bookmark, X } from "lucide-react";
 import { useEffect, useState } from "react";

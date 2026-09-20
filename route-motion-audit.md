@@ -1,4 +1,4 @@
-# Performance Atlas Route and Motion Audit
+# JD Fitness Club Route and Motion Audit
 
 ## Baseline Capture
 
@@ -25,7 +25,7 @@ The following routes were inspected at 390px mobile, 768px tablet, 1024px compac
 | Hero Three.js overlay | Refine | Capped DPR; only active while hero is visible; hidden for reduced motion. |
 | CSS hover and transition responses | Keep and standardize | Transform/opacity only; touch alternatives remain explicit. |
 | Manim Practice Progression | Keep as optional controlled media | Starts only on user request and pauses outside viewport. |
-| HyperFrames Atlas House Tour | Preview-only pending final render approval | Validated editable composition; no final MP4 will be rendered without explicit approval. |
+| HyperFrames JD Fitness Club Tour | Preview-only pending final render approval | Validated editable composition; no final MP4 will be rendered without explicit approval. |
 
 ## Motion Budget
 

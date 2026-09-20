@@ -1,8 +1,8 @@
-# Performance Atlas — Premium World Redesign
+# JD Fitness Club — Premium World Redesign
 
 ## Three Possible Directions
 
-### 1. Monumental Athletics
+### 1. JD Fitness Club
 **Very Brief Intro:** An architectural training house shaped by honed stone, blackened steel, pale daylight, and restrained cobalt details. The feeling is private-club confidence: cinematic, quiet, and obsessively considered.
 
 **Probability:** 0.07
@@ -19,7 +19,7 @@
 
 ---
 
-## Selected Direction: Monumental Athletics
+## Selected Direction: JD Fitness Club
 
 ### Design Movement
 **Quiet luxury hospitality meets contemporary athletic architecture.** The website should feel like entering an exceptional physical space: precise material finishes, photographic depth, disciplined typography, and a calm rhythm that gives the imagery room to breathe. It must avoid techno-fitness tropes, generic gradients, fake dashboard density, and conspicuous “3D for 3D’s sake.”
@@ -51,7 +51,7 @@ Use camera easing and light shifts only to orient. Typical interface motion is 1
 Use **DM Sans** as the refined utility text family and **Cormorant Garamond** for editorial display moments. The wordmark is a custom high-contrast serif lockup with broad tracking and a small, geometric Atlas coordinate. Headings are elegant but not ornamental; schedules, facts, and forms stay direct and highly legible in DM Sans.
 
 ### Brand Essence
-**Performance Atlas is a private-feeling urban training house for people who value rigorous coaching, a beautiful environment, and training that supports a whole life.**
+**JD Fitness Club is a private-feeling urban training house for people who value rigorous coaching, a beautiful environment, and training that supports a whole life.**
 
 **Personality:** composed, exacting, generous.
 
@@ -70,16 +70,16 @@ The mark is a slender cobalt coordinate star set beside a custom serif wordmark.
 
 ## Style Decisions
 
-The Atlas House is a **spatial narrative system**, not a decorative canvas. It uses a single shared architecture with route-specific rooms, quality tiers, and full semantic fallbacks. The 3D layer must never cover reading or interaction layers.
+The JD Fitness Club is a **spatial narrative system**, not a decorative canvas. It uses a single shared architecture with route-specific rooms, quality tiers, and full semantic fallbacks. The 3D layer must never cover reading or interaction layers.
 
 Every route uses explicit content bounds, responsive typography clamps, dedicated media safe areas, and a documented z-index hierarchy. Text should never be placed in an uncontrolled image void or depend on decorative effects for contrast.
 
-21st.dev-informed patterns are adapted as interaction architecture only. Their visual treatment must remain consistent with basalt, limestone, restrained cobalt, material captions, and the Performance Atlas typography system.
+21st.dev-informed patterns are adapted as interaction architecture only. Their visual treatment must remain consistent with basalt, limestone, restrained cobalt, material captions, and the JD Fitness Club typography system.
 
 Motion remains spatial and purposeful: opening/route transitions may be cinematic, while actionable components use short interruptible feedback. Continuous decorative motion is prohibited; all essential content resolves to a stable state under reduced-motion preferences.
 
 The cobalt Atlas coordinate is a directional wayfinding system attached to room labels, material captions, coach introductions, and primary actions; it is never decorative scatter.
 
-Each route keeps the shared Monumental Athletics material system while expressing a distinct room: structured rhythm for Programs, close observation for Coaching, hospitality for Membership, editorial archive for Journal, and calm invitation for Visit.
+Each route keeps the shared JD Fitness Club material system while expressing a distinct room: structured rhythm for Programs, close observation for Coaching, hospitality for Membership, editorial archive for Journal, and calm invitation for Visit.
 
 Atlas Cobalt `#315BFF` is reserved for a single primary action or coordinate signal per section; hierarchy otherwise comes from typography, scale, material, and spatial rules.

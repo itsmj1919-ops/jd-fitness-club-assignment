@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: elevate coaching through credible, editorial storytelling and clear expertise.
+ * JD Fitness Club: elevate coaching through credible, editorial storytelling and clear expertise.
  */
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "wouter";

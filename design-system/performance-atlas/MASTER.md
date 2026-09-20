@@ -6,7 +6,7 @@
 
 ---
 
-**Project:** Performance Atlas
+**Project:** JD Fitness Club
 **Generated:** 2026-08-16 04:59:48
 **Category:** Fitness/Gym App
 **Design Dials:** Motion 6/10 (Standard) | Density 3/10 (Spacious)

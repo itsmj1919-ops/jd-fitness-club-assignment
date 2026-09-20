@@ -1,4 +1,4 @@
-/* Monumental Athletics immersive system: content-safe z-layers, structured responsive type, and performance-aware motion. */
+/* JD Fitness Club immersive system: content-safe z-layers, structured responsive type, and performance-aware motion. */
 :root { --header-h:82px; --z-media:0; --z-atmosphere:1; --z-content:2; --z-nav:50; --z-overlay:90; --ease-atlas:cubic-bezier(.23,1,.32,1); --ease-quiet:cubic-bezier(.16,1,.3,1); --space-page:clamp(1.5rem,5vw,5rem); }
 html { scroll-padding-top:var(--header-h); }
 body { overflow-x:clip; }

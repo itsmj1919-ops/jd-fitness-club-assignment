@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: quiet-luxury hospitality, architectural spacing, and restrained cobalt detail.
+ * JD Fitness Club: quiet-luxury hospitality, architectural spacing, and restrained cobalt detail.
  */
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -16,7 +16,7 @@ const navItems = [
 ];
 
 export function Wordmark({ light = false }: { light?: boolean }) {
-  return <span className={`atlas-wordmark ${light ? "atlas-wordmark-light" : ""}`}><i aria-hidden="true" /><span>PERFORMANCE</span><b>ATLAS</b><em aria-hidden="true">40°44′N</em></span>;
+  return <span className={`atlas-wordmark ${light ? "atlas-wordmark-light" : ""}`}><i aria-hidden="true" /><span>JD FITNESS</span><b>CLUB</b><em aria-hidden="true">40°44′N</em></span>;
 }
 
 export function SiteHeader({ overlay = false }: { overlay?: boolean }) {
@@ -25,11 +25,11 @@ export function SiteHeader({ overlay = false }: { overlay?: boolean }) {
   const atlasWorld = useAtlasWorld();
   return <header className={`site-header ${overlay ? "site-header-overlay" : ""}`}>
     <div className="site-header-inner">
-      <Link href="/" className="brand-link" aria-label="Performance Atlas home"><Wordmark light={overlay} /></Link>
+      <Link href="/" className="brand-link" aria-label="JD Fitness Club home"><Wordmark light={overlay} /></Link>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {navItems.map((item) => <Link key={item.href} href={item.href} className={location === item.href ? "nav-active" : ""}>{item.label}</Link>)}
       </nav>
-      <button className={`atlas-map-trigger ${overlay ? "atlas-map-trigger-light" : ""}`} onClick={() => atlasWorld?.setMapOpen(true)}><span>Atlas house</span><i aria-hidden="true">↗</i></button>
+      <button className={`atlas-map-trigger ${overlay ? "atlas-map-trigger-light" : ""}`} onClick={() => atlasWorld?.setMapOpen(true)}><span>JD Fitness Club</span><i aria-hidden="true">↗</i></button>
       <AtlasCommand />
       <MemberActions light={overlay} />
       <Link href="/visit" className={`visit-link ${overlay ? "visit-link-light" : ""}`}>Plan a visit <span aria-hidden="true">↗</span></Link>
@@ -40,5 +40,5 @@ export function SiteHeader({ overlay = false }: { overlay?: boolean }) {
 }
 
 export function SiteFooter() {
-  return <footer className="site-footer"><div><Wordmark light /><p>A considered room for the work that matters.</p></div><div className="footer-links"><Link href="/programs">Programs</Link><Link href="/membership">Membership</Link><Link href="/visit">Plan a visit</Link></div><small>© 2026 Performance Atlas. Built for repeatable work.</small></footer>;
+  return <footer className="site-footer"><div><Wordmark light /><p>A considered room for the work that matters.</p></div><div className="footer-links"><Link href="/programs">Programs</Link><Link href="/membership">Membership</Link><Link href="/visit">Plan a visit</Link></div><small>© 2026 JD Fitness Club. Built for repeatable work.</small></footer>;
 }

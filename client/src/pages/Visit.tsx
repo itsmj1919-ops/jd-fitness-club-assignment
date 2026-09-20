@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: a direct, welcoming visit-request flow with clear labels and inline feedback.
+ * JD Fitness Club: a direct, welcoming visit-request flow with clear labels and inline feedback.
  */
 import { useState } from "react";
 import { ArrowUpRight, CheckCircle2, MapPin, Clock3 } from "lucide-react";

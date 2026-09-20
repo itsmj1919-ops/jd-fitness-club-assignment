@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: one-way, visibility-aware section choreography that never controls semantic state.
+ * JD Fitness Club: one-way, visibility-aware section choreography that never controls semantic state.
  */
 import { useEffect, useRef, useState } from "react";
 

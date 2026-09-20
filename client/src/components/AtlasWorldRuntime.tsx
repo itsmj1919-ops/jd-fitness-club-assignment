@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: one route-aware, quality-tiered spatial layer; decorative only and never a content gate.
+ * JD Fitness Club: one route-aware, quality-tiered spatial layer; decorative only and never a content gate.
  */
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Map, X } from "lucide-react";
@@ -53,7 +53,7 @@ function AtlasHouseMap({ open, onClose, activeRoom }: { open: boolean; onClose: 
     return () => { document.body.style.overflow = previous; window.removeEventListener("keydown", handleKey); };
   }, [open, onClose]);
   if (!open) return null;
-  return <div className="atlas-map-backdrop" onMouseDown={onClose}><section className="atlas-map" role="dialog" aria-modal="true" aria-labelledby="atlas-map-title" onMouseDown={(event) => event.stopPropagation()}><button onClick={onClose} className="atlas-map-close" aria-label="Close Atlas House map"><X size={18} /></button><div className="atlas-map-intro"><p className="eyebrow">Atlas House / 6 rooms</p><h2 id="atlas-map-title">Find a room for the work.</h2><p>Each room opens into a complete part of the Performance Atlas practice. Choose a place, then follow the route.</p></div><div className="atlas-map-grid">{rooms.map((room) => <Link href={room.route} key={room.id} onClick={onClose} className={room.id === activeRoom.id ? "active" : ""}><span>{room.number}</span><b>{room.name}</b><small>{room.description}</small><i style={{ background: room.accent }} /></Link>)}</div><p className="atlas-map-note"><Map size={14} /> Full navigation remains available in the header and command palette.</p></section></div>;
+  return <div className="atlas-map-backdrop" onMouseDown={onClose}><section className="atlas-map" role="dialog" aria-modal="true" aria-labelledby="atlas-map-title" onMouseDown={(event) => event.stopPropagation()}><button onClick={onClose} className="atlas-map-close" aria-label="Close JD Fitness Club map"><X size={18} /></button><div className="atlas-map-intro"><p className="eyebrow">JD Fitness Club / 6 rooms</p><h2 id="atlas-map-title">Find a room for the work.</h2><p>Each room opens into a complete part of the JD Fitness Club practice. Choose a place, then follow the route.</p></div><div className="atlas-map-grid">{rooms.map((room) => <Link href={room.route} key={room.id} onClick={onClose} className={room.id === activeRoom.id ? "active" : ""}><span>{room.number}</span><b>{room.name}</b><small>{room.description}</small><i style={{ background: room.accent }} /></Link>)}</div><p className="atlas-map-note"><Map size={14} /> Full navigation remains available in the header and command palette.</p></section></div>;
 }
 
 export function AtlasWorldRuntime({ children }: { children: React.ReactNode }) {

@@ -1,5 +1,5 @@
 /**
- * Monumental Athletics: a structured, focus-safe image discovery component inspired by premium interactive-list patterns.
+ * JD Fitness Club: a structured, focus-safe image discovery component inspired by premium interactive-list patterns.
  */
 import { ArrowUpRight, Compass, MoveRight } from "lucide-react";
 import { useState } from "react";
@@ -14,5 +14,5 @@ const zones = [
 export function AtlasExplorer() {
   const [active, setActive] = useState("strength");
   const zone = zones.find((item) => item.id === active) ?? zones[0];
-  return <section className="atlas-explorer" aria-labelledby="explorer-title"><div className="explorer-head"><div><p className="eyebrow">Atlas House / Explore the rooms</p><h2 id="explorer-title">A place for every kind of effort.</h2></div><p>Choose a room to see how the house supports the work you want to return to.</p></div><div className="explorer-stage"><div className="explorer-image-wrap"><img src={zone.image} alt={`${zone.title} at Performance Atlas`} key={zone.image} /><div className="explorer-image-caption"><Compass size={15} /><span>{zone.label}</span></div></div><div className="explorer-detail"><span className="explorer-no">{zone.number}</span><p className="eyebrow">{zone.title}</p><h3>{zone.copy}</h3><Link href={zone.route}>See this practice <ArrowUpRight size={17} /></Link></div><div className="explorer-nav" role="tablist" aria-label="Atlas House rooms">{zones.map((item) => <button role="tab" key={item.id} aria-selected={item.id === active} onClick={() => setActive(item.id)}><span>{item.number}</span><b>{item.title}</b><MoveRight size={16} /></button>)}</div></div></section>;
+  return <section className="atlas-explorer" aria-labelledby="explorer-title"><div className="explorer-head"><div><p className="eyebrow">JD Fitness Club / Explore the rooms</p><h2 id="explorer-title">A place for every kind of effort.</h2></div><p>Choose a room to see how the house supports the work you want to return to.</p></div><div className="explorer-stage"><div className="explorer-image-wrap"><img src={zone.image} alt={`${zone.title} at JD Fitness Club`} key={zone.image} /><div className="explorer-image-caption"><Compass size={15} /><span>{zone.label}</span></div></div><div className="explorer-detail"><span className="explorer-no">{zone.number}</span><p className="eyebrow">{zone.title}</p><h3>{zone.copy}</h3><Link href={zone.route}>See this practice <ArrowUpRight size={17} /></Link></div><div className="explorer-nav" role="tablist" aria-label="JD Fitness Club rooms">{zones.map((item) => <button role="tab" key={item.id} aria-selected={item.id === active} onClick={() => setActive(item.id)}><span>{item.number}</span><b>{item.title}</b><MoveRight size={16} /></button>)}</div></div></section>;
 }

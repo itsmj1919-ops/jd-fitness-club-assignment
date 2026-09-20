@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { getAtlasTourCaptionCue, getAtlasTourCaptionLabel, getAtlasTourControlLabel, getAtlasTourMediaStatus, getAtlasTourMotionAllowed, getAtlasTourSoundLabel, shouldPlayAtlasTourAmbient } from "./AtlasHouseTour";
 
-describe("Atlas House Tour motion preferences", () => {
+describe("JD Fitness Club Tour motion preferences", () => {
   it("uses the still frame when reduced motion is preferred without an explicit opt-in", () => {
     expect(getAtlasTourMotionAllowed(true, false)).toBe(false);
   });
@@ -13,7 +13,7 @@ describe("Atlas House Tour motion preferences", () => {
   });
 });
 
-describe("Atlas House Tour captions and ambient sound", () => {
+describe("JD Fitness Club Tour captions and ambient sound", () => {
   it("uses explicit labels for caption and sound states", () => {
     expect(getAtlasTourCaptionLabel(true)).toBe("Hide captions");
     expect(getAtlasTourCaptionLabel(false)).toBe("Show captions");
@@ -23,7 +23,7 @@ describe("Atlas House Tour captions and ambient sound", () => {
 
   it("maps the Tour timeline to meaningful caption cues", () => {
     expect(getAtlasTourCaptionCue(0)).toContain("Soft architectural room tone");
-    expect(getAtlasTourCaptionCue(1.6)).toBe("ENTER THE ATLAS HOUSE");
+    expect(getAtlasTourCaptionCue(1.6)).toBe("ENTER JD FITNESS CLUB");
     expect(getAtlasTourCaptionCue(3.5)).toContain("TRAINING FLOOR");
     expect(getAtlasTourCaptionCue(7.4)).toContain("RECOVERY LIBRARY");
     expect(getAtlasTourCaptionCue(8)).toBe("");
