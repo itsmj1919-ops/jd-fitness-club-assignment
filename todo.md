@@ -56,5 +56,5 @@
 - [x] Verify the reduced-motion still fallback, disabled controls, and explicit opt-in path in a controlled browser session.
 - [x] Capture final desktop/mobile evidence for caption readability and media-control behavior.
 - [x] Ensure the ambient track starts from the visitor’s direct opt-in gesture and re-verify live synchronization.
-- [ ] Save the verified accessible Tour enhancement checkpoint.
-- [ ] Deliver the accessible Tour enhancement checkpoint to the user.
+- [x] Save the verified accessible Tour enhancement checkpoint.
+- [x] Deliver the accessible Tour enhancement checkpoint to the user.
