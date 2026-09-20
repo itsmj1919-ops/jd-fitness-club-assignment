@@ -1,0 +1,17 @@
+{
+  "name": "JD Fitness Club",
+  "short_name": "JD Fitness Club",
+  "description": "A quiet-luxury urban training house for strength, coaching, recovery, and repeatable work.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141514",
+  "theme_color": "#141514",
+  "icons": [
+    {
+      "src": "/manus-storage/jd-fitness-club-favicon_bcbb1615.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
